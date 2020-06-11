@@ -44,6 +44,10 @@ body{
 outline: 2px solid tomato;
 }
 
+.conteiner.item{
+    margin-top: 93px;
+}
+
 .header-container{
     background-color: var(--background-sheet-color);
 } 
@@ -95,8 +99,7 @@ h1,h2,h3,h4,p{
 /* Невидимые элементы */
 
 .invisible{
-    color: rgba(0, 0, 0, 0);
-    
+    display: none;
 }
 
 /* Кнопки страницы */
@@ -111,6 +114,7 @@ h1,h2,h3,h4,p{
     padding: 10px 32px;  
 }
 
+
 /* Активные кнопки */
 
 .button.primary{
@@ -123,10 +127,6 @@ h1,h2,h3,h4,p{
 color: var(--primary-text-color);
 }
 
-
-.list{
-    margin-top: 93px;
-}
 
 /* Заголовки */
 
@@ -266,6 +266,8 @@ text-align: center;
 /* Наши проэкты */
 
 .projects{
+margin-top: 20px;
+
     color: var(--primary-text-color);
 font-weight: 700;
 font-size: 18px;
@@ -280,7 +282,13 @@ line-height: 1.87;
 }
 
 .about{
+margin-top: 4px;
+
     color: var(--primary-text-color);
    font-size: 18px;
 line-height: 1.55;
+}
+
+.picture{
+    margin-top: 34px;
 }
