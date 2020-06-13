@@ -38,6 +38,7 @@ body{
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 94px;
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
@@ -52,7 +53,18 @@ outline: 2px solid tomato;
     background-color: var(--background-sheet-color);
 } 
 
-.text-nav a{
+/* Main-nav */
+
+.nav-main{
+    display: flex;
+    align-items: center;
+}
+
+.text-nav .link{
+ display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -60,17 +72,23 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
-
-.accent:hover,
-.accent:focus{
-    color: var(--link-color);
+.text-nav{
+     display: flex;
+     margin-left: 85px;
 }
- 
- 
+
+.text-nav .item + .item{
+    margin-left: 50px;
+}
+
+
  /* Контакты в шапке */
 
-.text-contacts a{
-   
+.text-contacts .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--paragraph-color);
 font-weight: 500;
 font-size: 14px;
@@ -78,8 +96,22 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
+.text-contacts{
+    display: flex;
+    margin-left: auto;
+}
+
+.text-contacts .item+ .item{
+    margin-left: 30px;
+}
 
 
+
+.link:hover,
+.link:focus{
+    color: var(--link-color);
+}
+ 
 /* Основные стили страницы */
 
 a {
@@ -118,6 +150,7 @@ h1,h2,h3,h4,p{
 /* Активные кнопки */
 
 .button.primary{
+   
     background-color: var(--background-color);
     color: var(--button-color);
 }
@@ -127,7 +160,10 @@ h1,h2,h3,h4,p{
 color: var(--primary-text-color);
 }
 
-
+.button.primary.main{
+ display: inline-block;
+    margin-top: 30px;
+}
 /* Заголовки */
 
 .main{
@@ -136,10 +172,8 @@ text-align: center;
 
 .main-header{
 
-  
 
- padding: 10px 32px;
- margin-top: 200px;
+ 
 
 font-weight: 900;
 font-size: 44px;
@@ -154,7 +188,7 @@ text-transform: uppercase;
 
 .little-title{
   
-margin-top: 94px;
+margin-top: 30px;
 
     color: var(--primary-text-color);
 font-weight: 700;
@@ -166,18 +200,34 @@ text-transform: uppercase;
 
 /* Чем занимаемся */
 
+.conteiner.task{
+    margin-top: 94px;
+}
+
 .task{
     color: var(--primary-text-color);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-margin-top: 94px;
 }
 
+.our-task{
+    margin-top: 50px;
+}
 
+.task-main{
+    display: flex;
+     justify-content: space-around;
+}
 
-.link a{
+.task-main .item + .item{
+    margin-left: 30px;
+}
+
+.item .line{
+    
+
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -187,13 +237,23 @@ text-transform: uppercase;
 
 /* команда */
 
-.team{
-    background-color: var(--background-team-color);
+.conteiner.team{
+    margin-top: 94px;
+
+     background-color: var(--background-team-color);
 padding-top: 94px;
 padding-bottom: 94px;
+      
 }
 
-.title h3{    
+.our-team{
+    display: flex;
+    justify-content: space-around;
+margin-top: 50px;
+}
+
+
+.item .name{    
     color: var(--primary-text-color);
 font-weight: 500;
 font-size: 16px;
@@ -201,10 +261,14 @@ line-height: 1.18;
 margin-top: 30px;
 }
 
-.title p{
+.item .position{
 font-size: 16px;
 line-height: 1.18;
 margin-top: 10px;
+}
+
+.team-contact{
+    display: flex;
 }
 
 .team-contact a{
@@ -212,13 +276,44 @@ margin-top: 10px;
 margin-top: 16px;
 }
 
-.features p{
+/* Особенности */
+
+.image{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    background-color: var(--background-team-color);
+    border-radius: 4px;
+
+}
+
+.features{
+    display: flex;
+    justify-content: space-around;
+}
+
+.features .item + .item{
+margin-left: 30px;
+}
+
+.features .discript{
 font-size: 14px;
 line-height: 1.71;
 margin-top: 10px;
 }
 
 /* Наши клиенты */
+
+.clients{
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients .item + .item{
+    margin-left: 30px;
+}
 
 .logo{
     margin-top: 50px;
@@ -228,7 +323,22 @@ margin-top: 10px;
 /*Адресс и контакты */
 
 .finish{
+    margin-top: 94px;
     background-color: var(--footer-color);
+}
+
+.footer-logo{
+    margin-top: 45px;
+}
+
+.main-adress{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.list.adress{
+    margin-top: 10px;
 }
 
 .adress-title{
@@ -253,9 +363,18 @@ line-height: 1.14;
 text-transform: uppercase;
 }
 
+.list{
+    margin-top: 57px;
+}
+
+.list .item{
+    display: flex;
+}
+
 /* Автор и год */
 
 .go-it{
+
     color: var(--goit-color);
 font-size: 12px;
 line-height: 2;
