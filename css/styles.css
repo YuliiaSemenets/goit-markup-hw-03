@@ -42,20 +42,20 @@ body{
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
-outline: 2px solid tomato;
+
 }
 
-.conteiner.item{
-    margin-top: 93px;
-}
+
 
 .header-container{
+   
     background-color: var(--background-sheet-color);
 } 
 
 /* Main-nav */
 
 .nav-main{
+     margin-top: 0px;
     display: flex;
     align-items: center;
 }
@@ -115,8 +115,10 @@ letter-spacing: 0.02em;
 /* Основные стили страницы */
 
 a {
+    
   text-decoration: none;
 }
+
 ul{
     list-style: none;
       padding: 0;
@@ -137,6 +139,7 @@ h1,h2,h3,h4,p{
 /* Кнопки страницы */
 
 .button{
+    
     font-family: inherit;
     font-size: 16px;
     line-height: 1.87;
@@ -146,6 +149,9 @@ h1,h2,h3,h4,p{
     padding: 10px 32px;  
 }
 
+.main-button{
+text-align: center;
+}
 
 /* Активные кнопки */
 
@@ -183,6 +189,37 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 
+.conteiner.item{
+    margin-top: 93px;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+.portfolio{
+display: flex;
+flex-wrap: wrap;
+  width: 1170px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+
+.portfolio .item{
+   
+    width: 370px;
+   margin-top: 30px;
+    
+}
+
+.portfolio .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.portfolio .item:nth-child(-n+3) {
+    margin-top: 34px;
+}
 
 /* Заголовки меньшие */
 
@@ -239,6 +276,7 @@ text-transform: uppercase;
 
 .conteiner.team{
     margin-top: 94px;
+    text-align: center;
 
      background-color: var(--background-team-color);
 padding-top: 94px;
@@ -408,6 +446,3 @@ margin-top: 4px;
 line-height: 1.55;
 }
 
-.picture{
-    margin-top: 34px;
-}
