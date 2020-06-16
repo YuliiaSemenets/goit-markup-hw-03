@@ -172,14 +172,15 @@ color: var(--primary-text-color);
 }
 /* Заголовки */
 
-.main{
+.main {
 text-align: center;
 }
 
 .main-header{
 
-
- 
+width: 696px;
+margin-right: auto;
+margin-left: auto;
 
 font-weight: 900;
 font-size: 44px;
@@ -238,7 +239,7 @@ text-transform: uppercase;
 /* Чем занимаемся */
 
 .conteiner.task{
-    margin-top: 94px;
+    margin-top: 85px;
 }
 
 .task{
@@ -361,25 +362,30 @@ margin-top: 10px;
 /*Адресс и контакты */
 
 .finish{
-    margin-top: 94px;
+    
     background-color: var(--footer-color);
 }
+
+.finish.main{
+    margin-top: 103px;
+   
+}
+
 
 .footer-logo{
     margin-top: 45px;
 }
 
 .main-adress{
-
-    display: flex;
+     display: flex;
     justify-content: space-between;
 }
 
 .list.adress{
-    margin-top: 10px;
 }
 
 .adress-title{
+    margin-top: 8px;
     color: var(--footer-adress-color);
 font-size: 14px;
 line-height: 1.71;
